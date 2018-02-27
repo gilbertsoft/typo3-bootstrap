@@ -1,0 +1,47 @@
+{
+	"name": "gilbertsoft/typo3-bootstrap",
+	"description": "TYPO3 Project Bootstrap",
+	"type": "project",
+	"license": "GPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Simon Gilli",
+			"email": "typo3@gilbertsoft.org"
+		}
+	],
+	"require": {
+		"typo3/cms": "^8.7",
+		"helhum/typo3-console": "^5.1",
+		"gilbertsoft/typo3-project": "^0.0.1"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"repositories": [
+		{ "type": "composer", "url": "https://composer.typo3.org/" }
+	],
+	"extra": {
+		"typo3/cms": {
+			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"web-dir": "../../web"
+		},
+		"helhum/typo3-console": {
+			"install-extension-dummy": false
+		}
+	},
+	"scripts": {
+		"typo3-cms-scripts": [
+			"typo3cms install:fixfolderstructure"
+		],
+		"aimeos-scripts": [
+			"Aimeos\\Aimeos\\Custom\\Composer::install"
+		],
+		"post-install-cmd": [
+			"@typo3-cms-scripts",
+			"@aimeos-scripts"
+		],
+		"post-update-cmd": [
+			"@typo3-cms-scripts",
+			"@aimeos-scripts"
+		]
+	}
+}
