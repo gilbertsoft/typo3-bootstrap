@@ -36,12 +36,10 @@
 			"Aimeos\\Aimeos\\Custom\\Composer::install"
 		],
 		"post-install-cmd": [
-			"@typo3-cms-scripts",
-			"@aimeos-scripts"
+			"@typo3-cms-scripts"
 		],
 		"post-update-cmd": [
-			"@typo3-cms-scripts",
-			"@aimeos-scripts"
+			"@typo3-cms-scripts"
 		]
 	}
 }
