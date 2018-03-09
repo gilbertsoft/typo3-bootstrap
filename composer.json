@@ -12,7 +12,8 @@
 	"require": {
 		"typo3/cms": "^8.7",
 		"helhum/typo3-console": "^5.1",
-		"gilbertsoft/typo3-project": "^0.0.1"
+		"friendsoftypo3/extension-builder": "dev-master",
+		"gilbertsoft/typo3-dev-8-7": "^0.0.1"
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
@@ -36,12 +37,10 @@
 			"Aimeos\\Aimeos\\Custom\\Composer::install"
 		],
 		"post-install-cmd": [
-			"@typo3-cms-scripts",
-			"@aimeos-scripts"
+			"@typo3-cms-scripts"
 		],
 		"post-update-cmd": [
-			"@typo3-cms-scripts",
-			"@aimeos-scripts"
+			"@typo3-cms-scripts"
 		]
 	}
 }
