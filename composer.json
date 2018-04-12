@@ -17,7 +17,8 @@
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"repositories": [
-		{ "type": "composer", "url": "https://composer.typo3.org/" }
+		{ "type": "composer", "url": "https://composer.typo3.org/" },
+		{ "type": "vcs", "url": "https://github.com/gilbertsoft/typo3-realurl" }
 	],
 	"extra": {
 		"typo3/cms": {
