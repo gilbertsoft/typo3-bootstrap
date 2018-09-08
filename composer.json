@@ -12,13 +12,12 @@
 	"require": {
 		"typo3/cms": "^8.7",
 		"helhum/typo3-console": "^5.1",
-		"gilbertsoft/typo3-project": "^0.0.1"
+		"gilbertsoft/typo3-mauer": "^0.0.1"
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
 	"repositories": [
-		{ "type": "composer", "url": "https://composer.typo3.org/" },
-		{ "type": "vcs", "url": "https://github.com/gilbertsoft/typo3-realurl" }
+		{ "type": "composer", "url": "https://composer.typo3.org/" }
 	],
 	"extra": {
 		"typo3/cms": {
@@ -37,12 +36,10 @@
 			"Aimeos\\Aimeos\\Custom\\Composer::install"
 		],
 		"post-install-cmd": [
-			"@typo3-cms-scripts",
-			"@aimeos-scripts"
+			"@typo3-cms-scripts"
 		],
 		"post-update-cmd": [
-			"@typo3-cms-scripts",
-			"@aimeos-scripts"
+			"@typo3-cms-scripts"
 		]
 	}
 }
