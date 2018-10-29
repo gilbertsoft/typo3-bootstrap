@@ -30,7 +30,7 @@
 		"typo3/cms-t3editor": "^9.5",
 		"typo3/cms-tstemplate": "^9.5",
 		"typo3/cms-viewpage": "^9.5",
-		"gilbertsoft/typo3-mauer": "^0.0.1 || dev-master"
+		"gilbertsoft/typo3-mauer": "^0.0.1 || dev-master || dev-dev"
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
