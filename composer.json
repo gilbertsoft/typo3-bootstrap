@@ -10,8 +10,7 @@
 		}
 	],
 	"require": {
-		"helhum/typo3-console": "*",
-		"typo3/minimal": "^9.5",
+		"typo3/cms-base-distribution": "^9.5",
 		"gilbertsoft/typo3-mauer": "^0.0.1 || dev-master || dev-dev"
 	},
 	"minimum-stability": "dev",
