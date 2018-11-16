@@ -43,13 +43,8 @@
 		"aimeos-scripts": [
 			"Aimeos\\Aimeos\\Custom\\Composer::install"
 		],
-		"post-install-cmd": [
-			"@aimeos-scripts"
-		],
-		"post-update-cmd": [
-			"@aimeos-scripts"
-		],
 		"post-autoload-dump": [
+			"@aimeos-scripts",
 			"@typo3-cms-scripts"
 		]
 	}
