@@ -10,8 +10,15 @@
 		}
 	],
 	"require": {
-		"typo3/cms": "^8.7",
-		"helhum/typo3-console": "^5.1",
+		"typo3/cms-base-distribution": "^8.7",
+		"typo3/cms-filemetadata": "^8.7",
+		"typo3/cms-linkvalidator": "^8.7",
+		"typo3/cms-lowlevel": "^8.7",
+		"typo3/cms-opendocs": "^8.7",
+		"typo3/cms-recycler": "^8.7",
+		"typo3/cms-reports": "^8.7",
+		"typo3/cms-sys-action": "^8.7",
+		"typo3/cms-taskcenter": "^8.7",
 		"gilbertsoft/typo3-heinzritter-vialia": "^0.0.1"
 	},
 	"minimum-stability": "dev",
@@ -30,15 +37,13 @@
 	},
 	"scripts": {
 		"typo3-cms-scripts": [
-			"typo3cms install:fixfolderstructure"
+			"typo3cms install:fixfolderstructure",
+			"typo3cms install:generatepackagestates"
 		],
 		"aimeos-scripts": [
 			"Aimeos\\Aimeos\\Custom\\Composer::install"
 		],
-		"post-install-cmd": [
-			"@typo3-cms-scripts"
-		],
-		"post-update-cmd": [
+		"post-autoload-dump": [
 			"@typo3-cms-scripts"
 		]
 	}
