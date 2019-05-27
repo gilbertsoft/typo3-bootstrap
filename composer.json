@@ -10,16 +10,16 @@
 		}
 	],
 	"require": {
-		"typo3/cms-base-distribution": "^8.7",
-		"typo3/cms-filemetadata": "^8.7",
-		"typo3/cms-linkvalidator": "^8.7",
-		"typo3/cms-lowlevel": "^8.7",
-		"typo3/cms-opendocs": "^8.7",
-		"typo3/cms-recycler": "^8.7",
-		"typo3/cms-reports": "^8.7",
-		"typo3/cms-sys-action": "^8.7",
-		"typo3/cms-taskcenter": "^8.7",
-		"gilbertsoft/typo3-zwergenfabrik": "^1.0"
+		"typo3/cms-base-distribution": "^9.5",
+		"typo3/cms-filemetadata": "^9.5",
+		"typo3/cms-linkvalidator": "^9.5",
+		"typo3/cms-lowlevel": "^9.5",
+		"typo3/cms-opendocs": "^9.5",
+		"typo3/cms-recycler": "^9.5",
+		"typo3/cms-reports": "^9.5",
+		"typo3/cms-sys-action": "^9.5",
+		"typo3/cms-taskcenter": "^9.5",
+		"gilbertsoft/typo3-zwergenfabrik": "dev-aimeos-bp-theme"
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true,
