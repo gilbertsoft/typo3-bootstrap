@@ -1,52 +1,52 @@
 {
-	"name": "gilbertsoft/typo3-bootstrap",
-	"description": "TYPO3 Project Bootstrap",
-	"type": "project",
-	"license": "GPL-3.0-or-later",
-	"authors": [
-		{
-			"name": "Simon Gilli",
-			"email": "typo3@gilbertsoft.org"
-		}
-	],
-	"require": {
-		"typo3/cms-base-distribution": "^8.7",
-		"typo3/cms-filemetadata": "^8.7",
-		"typo3/cms-linkvalidator": "^8.7",
-		"typo3/cms-lowlevel": "^8.7",
-		"typo3/cms-opendocs": "^8.7",
-		"typo3/cms-recycler": "^8.7",
-		"typo3/cms-reports": "^8.7",
-		"typo3/cms-sys-action": "^8.7",
-		"typo3/cms-taskcenter": "^8.7",
-		"gilbertsoft/typo3-zwergenfabrik": "^1.0",
-		"clickstorm/go_maps_ext": "^2.0"
-	},
-	"minimum-stability": "dev",
-	"prefer-stable": true,
-	"repositories": [
-		{ "type": "composer", "url": "https://composer.typo3.org/" }
-	],
-	"extra": {
-		"typo3/cms": {
-			"cms-package-dir": "{$vendor-dir}/typo3/cms",
-			"web-dir": "../../../web"
-		},
-		"helhum/typo3-console": {
-			"install-extension-dummy": false
-		}
-	},
-	"scripts": {
-		"typo3-cms-scripts": [
-			"typo3cms install:fixfolderstructure",
-			"typo3cms install:generatepackagestates"
-		],
-		"aimeos-scripts": [
-			"Aimeos\\Aimeos\\Custom\\Composer::install"
-		],
-		"post-autoload-dump": [
-			"@aimeos-scripts",
-			"@typo3-cms-scripts"
-		]
-	}
+    "name": "gilbertsoft/typo3-bootstrap",
+    "description": "TYPO3 Project Bootstrap",
+    "type": "project",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Simon Gilli",
+            "email": "typo3@gilbertsoft.org"
+        }
+    ],
+    "require": {
+        "typo3/cms-base-distribution": "^8.7",
+        "typo3/cms-filemetadata": "^8.7",
+        "typo3/cms-linkvalidator": "^8.7",
+        "typo3/cms-lowlevel": "^8.7",
+        "typo3/cms-opendocs": "^8.7",
+        "typo3/cms-recycler": "^8.7",
+        "typo3/cms-reports": "^8.7",
+        "typo3/cms-sys-action": "^8.7",
+        "typo3/cms-taskcenter": "^8.7",
+        "gilbertsoft/typo3-zwergenfabrik": "^1.0",
+        "clickstorm/go_maps_ext": "^2.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        { "type": "composer", "url": "https://composer.typo3.org/" }
+    ],
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": "../../../web"
+        },
+        "helhum/typo3-console": {
+            "install-extension-dummy": false
+        }
+    },
+    "scripts": {
+        "typo3-cms-scripts": [
+            "typo3cms install:fixfolderstructure",
+            "typo3cms install:generatepackagestates"
+        ],
+        "aimeos-scripts": [
+            "Aimeos\\Aimeos\\Custom\\Composer::install"
+        ],
+        "post-autoload-dump": [
+            "@aimeos-scripts",
+            "@typo3-cms-scripts"
+        ]
+    }
 }
