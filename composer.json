@@ -27,6 +27,10 @@
     "repositories": [
         { "type": "composer", "url": "https://composer.typo3.org/" }
     ],
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
     "extra": {
         "typo3/cms": {
             "cms-package-dir": "{$vendor-dir}/typo3/cms",
