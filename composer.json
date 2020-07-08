@@ -42,7 +42,9 @@
             "typo3cms install:generatepackagestates"
         ],
         "aimeos-scripts": [
-            "Aimeos\\Aimeos\\Custom\\Composer::install"
+            "Aimeos\\Aimeos\\Custom\\Composer::install",
+            "rm ../../../web/typo3conf/ext/aimeos/Resources/Private/Extensions",
+            "ln -rs  ./ext ../../../web/typo3conf/ext/aimeos/Resources/Private/Extensions"
         ],
         "post-autoload-dump": [
             "@aimeos-scripts",
