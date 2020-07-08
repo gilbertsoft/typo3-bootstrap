@@ -24,9 +24,16 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "repositories": [
-        { "type": "composer", "url": "https://composer.typo3.org/" }
-    ],
+    "repositories": {
+        "local": {
+            "type": "path",
+            "url": "packages/*"
+        },
+        "typo3": {
+            "type": "composer",
+            "url": "https://composer.typo3.org"
+        }
+    },
     "config": {
         "optimize-autoloader": true,
         "sort-packages": true
