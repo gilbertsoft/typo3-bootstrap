@@ -1,0 +1,3 @@
+[submodule "packages/php-saferpay"]
+	path = packages/php-saferpay
+	url = https://github.com/gilbertsoft/php-saferpay.git

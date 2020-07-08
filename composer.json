@@ -12,6 +12,7 @@
     "require": {
         "clickstorm/go_maps_ext": "^2.0",
         "gilbertsoft/typo3-zwergenfabrik": "^1.0",
+        "gsaimeos/gs-saferpay": "@dev",
         "helhum/typo3-console": "^5.8",
         "typo3/cms-core": "^8.7",
         "typo3/cms-filemetadata": "^8.7",
