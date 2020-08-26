@@ -186,16 +186,16 @@
         },
         {
             "name": "aimeos/ai-controller-frontend",
-            "version": "2018.10.7",
+            "version": "2018.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aimeos/ai-controller-frontend.git",
-                "reference": "e5626171ac707228f5b9e5a023d5bdf969d4ccc9"
+                "reference": "02cb20dfa9db7df781ef68cec44aecbf14aeb3dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aimeos/ai-controller-frontend/zipball/e5626171ac707228f5b9e5a023d5bdf969d4ccc9",
-                "reference": "e5626171ac707228f5b9e5a023d5bdf969d4ccc9",
+                "url": "https://api.github.com/repos/aimeos/ai-controller-frontend/zipball/02cb20dfa9db7df781ef68cec44aecbf14aeb3dd",
+                "reference": "02cb20dfa9db7df781ef68cec44aecbf14aeb3dd",
                 "shasum": ""
             },
             "require": {
@@ -224,7 +224,7 @@
                 "extension",
                 "frontend"
             ],
-            "time": "2019-05-08T12:44:05+00:00"
+            "time": "2020-08-13T10:07:31+00:00"
         },
         {
             "name": "aimeos/ai-controller-jobs",
