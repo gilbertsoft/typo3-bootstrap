@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2229e6a0c2e96ba1e1f736f764960f2f",
+    "content-hash": "1218294d88a1a6662914bdb2150582a0",
     "packages": [
         {
             "name": "aimeos/ai-admin-jqadm",
@@ -612,59 +612,6 @@
             "time": "2018-12-15T15:52:02+00:00"
         },
         {
-            "name": "clickstorm/go_maps_ext",
-            "version": "2.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mhirdes/go_maps_ext.git",
-                "reference": "43036a428a945f1cfb965524fc8d3fc89041d895"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mhirdes/go_maps_ext/zipball/43036a428a945f1cfb965524fc8d3fc89041d895",
-                "reference": "43036a428a945f1cfb965524fc8d3fc89041d895",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-core": "7.6.0 - 8.7.99"
-            },
-            "replace": {
-                "go_maps_ext": "self.version",
-                "typo3-ter/go-maps-ext": "self.version"
-            },
-            "type": "typo3-cms-extension",
-            "autoload": {
-                "psr-4": {
-                    "Clickstorm\\GoMapsExt\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Marc Hirdes",
-                    "email": "hirdes@clickstorm.de",
-                    "homepage": "http://www.clickstorm.de",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Google Maps Extension. Simply insert a google map Version 3 inc. jQuery, calculate a route, images for markers, style maps, KML, categories, responsive and many more.",
-            "homepage": "http://www.clickstorm.de",
-            "keywords": [
-                "TYPO3 CMS",
-                "extbase",
-                "google",
-                "kml",
-                "map",
-                "marker",
-                "route",
-                "style"
-            ],
-            "time": "2018-12-21T14:26:04+00:00"
-        },
-        {
             "name": "cogpowered/finediff",
             "version": "0.3.1",
             "source": {
@@ -816,22 +763,66 @@
             "time": "2016-04-05T11:42:46+00:00"
         },
         {
-            "name": "dmitryd/typo3-realurl",
-            "version": "2.5.0",
+            "name": "comsolit/easy_googlemap",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/dmitryd/typo3-realurl.git",
-                "reference": "beb6010830c2bced17432433fafcdf7834a70daa"
+                "url": "https://github.com/comsolit/easy_googlemap.git",
+                "reference": "5895b99aa68b9852835a2e5be1c0c80750d64edb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmitryd/typo3-realurl/zipball/beb6010830c2bced17432433fafcdf7834a70daa",
-                "reference": "beb6010830c2bced17432433fafcdf7834a70daa",
+                "url": "https://api.github.com/repos/comsolit/easy_googlemap/zipball/5895b99aa68b9852835a2e5be1c0c80750d64edb",
+                "reference": "5895b99aa68b9852835a2e5be1c0c80750d64edb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0",
+                "typo3/cms-core": ">=7.6.0,<8.7.99"
+            },
+            "replace": {
+                "comsolit/easy_googlemap": "self.version",
+                "easy_googlemap": "self.version"
+            },
+            "type": "typo3-cms-extension",
+            "autoload": {
+                "psr-4": {
+                    "Comsolit\\EasyGooglemap\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "comsolit AG",
+                    "email": "info@comsolit.com",
+                    "homepage": "https://www.comsolit.com/"
+                }
+            ],
+            "description": "Google Map Extension",
+            "keywords": [
+                "cms",
+                "map",
+                "typo3"
+            ],
+            "time": "2019-03-21T08:32:20+00:00"
+        },
+        {
+            "name": "dmitryd/typo3-realurl",
+            "version": "2.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dmitryd/typo3-realurl.git",
+                "reference": "40ae68402643c8080d1620c957e274a6d9cec4b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dmitryd/typo3-realurl/zipball/40ae68402643c8080d1620c957e274a6d9cec4b0",
+                "reference": "40ae68402643c8080d1620c957e274a6d9cec4b0",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "php": ">=5.4.0,<7.3.0",
+                "php": ">=5.4.0,<7.4.0",
                 "typo3/cms-core": ">=6.2.0,<9.0.0"
             },
             "conflict": {
@@ -841,19 +832,20 @@
                 "typo3-ter/simulatestatic": ">0.0.1"
             },
             "replace": {
-                "realurl": "self.version",
+                "dmitryd/typo3-realurl": "self.version",
                 "typo3-ter/realurl": "self.version"
             },
             "require-dev": {
                 "phpunit/phpunit": "~4.8.0"
             },
             "suggest": {
-                "typo3-ter/static-info-tables": ">=6.2.0"
+                "sjbr/static-info-tables": ">=6.2.0"
             },
             "type": "typo3-cms-extension",
             "extra": {
                 "typo3/cms": {
                     "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "extension-key": "realurl",
                     "web-dir": ".Build/Web"
                 }
             },
@@ -880,7 +872,7 @@
                 "cms",
                 "typo3"
             ],
-            "time": "2018-07-09T00:00:00+00:00"
+            "time": "2020-04-27T08:40:03+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1738,28 +1730,28 @@
         },
         {
             "name": "gilbertsoft/typo3-zwergenfabrik",
-            "version": "1.1.x-dev",
+            "version": "1.2.x-dev",
             "dist": {
                 "type": "path",
                 "url": "packages/zwergenfabrik",
-                "reference": "66727150e40acdbd6be9592b48687282945111f3"
+                "reference": "a9674c664eaf8d94032e399d7a3373670e708016"
             },
             "require": {
                 "aimeos/aimeos-typo3": "^18.4 || 2018.10.x-dev",
                 "bk2k/bootstrap-package": "^9.1.0",
-                "dmitryd/typo3-realurl": "^2.3.1",
-                "gilbertsoft/gscacheconfig": "*",
                 "gilbertsoft/gsfavicon": "^3.0.0",
-                "gilbertsoft/gsprotectedconfig": "*",
-                "gilbertsoft/gswarranty": "*",
-                "typo3-ter/easy-googlemap": "^2.0.0",
                 "typo3/cms-core": "^8.7"
             },
             "replace": {
-                "gszwergenfabrik": "self.version",
+                "gilbertsoft/gszwergenfabrik": "self.version",
                 "typo3-ter/gszwergenfabrik": "self.version"
             },
             "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "gszwergenfabrik"
+                }
+            },
             "license": [
                 "GPL-3.0-or-later"
             ],
@@ -2537,24 +2529,24 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.7.4",
+            "version": "1.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "b2ada2ad5d8a32b89088b8adc31ecd2e3a13baf3"
+                "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/b2ada2ad5d8a32b89088b8adc31ecd2e3a13baf3",
-                "reference": "b2ada2ad5d8a32b89088b8adc31ecd2e3a13baf3",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/994ecccd8f3283ecf5ac33254543eb0ac946d525",
+                "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.5.9 || ^7.0 || ^8.0"
             },
             "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.3",
-                "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0 || ^7.0"
+                "bamarni/composer-bin-plugin": "^1.4.1",
+                "phpunit/phpunit": "^4.8.35 || ^5.7.27 || ^6.5.6 || ^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
             "extra": {
@@ -2598,7 +2590,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-07T10:40:07+00:00"
+            "time": "2020-07-20T17:29:33+00:00"
         },
         {
             "name": "psr/container",
@@ -2788,18 +2780,17 @@
         },
         {
             "name": "sjbr/static-info-tables",
-            "version": "6.7.5",
+            "version": "v6.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.typo3.org/TYPO3CMS/Extensions/static_info_tables.git",
-                "reference": "2788d22cda957d3e937388b74ed0226e7b473832"
+                "reference": "031a8de213231b4390ce63912eb3bf48461eefdb"
             },
             "require": {
-                "php": ">= 7.0, <7.3",
-                "typo3/cms-core": ">=8.7, <10.0"
+                "php": "^7.0",
+                "typo3/cms-core": ">=8.7, <11.0"
             },
             "replace": {
-                "static_info_tables": "self.version",
                 "typo3-ter/static-info-tables": "self.version"
             },
             "type": "typo3-cms-extension",
@@ -2810,7 +2801,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2828,7 +2819,7 @@
             "keywords": [
                 "typo3"
             ],
-            "time": "2019-10-17T21:15:06+00:00"
+            "time": "2020-06-09T14:37:44+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4068,42 +4059,6 @@
             "transport-options": {
                 "relative": true
             }
-        },
-        {
-            "name": "typo3-ter/easy-googlemap",
-            "version": "2.0.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://extensions.typo3.org/extension/download/easy_googlemap/2.0.1/zip/"
-            },
-            "require": {
-                "typo3/cms-core": ">= 7.6.00, <= 8.7.99"
-            },
-            "replace": {
-                "typo3-ter/easy_googlemap": "self.version"
-            },
-            "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "easy_googlemap"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Comsolit\\EasyGooglemap\\": "Classes/"
-                }
-            },
-            "authors": [
-                {
-                    "name": "Andres Lobacovs, comsolit AG",
-                    "email": "info@comsolit.ch",
-                    "company": "comsolit AG",
-                    "username": "larsmessmer"
-                }
-            ],
-            "description": "Easy and simple Googlemap Extension for the TYPO3 CMS, Good use for company roadmap on websites and for responsive pages, based on the google maps API",
-            "homepage": "https://extensions.typo3.org/extension/easy_googlemap/",
-            "time": "2019-04-08T13:53:43+00:00"
         },
         {
             "name": "typo3/class-alias-loader",
@@ -6590,6 +6545,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "gilbertsoft/typo3-zwergenfabrik": 20,
         "gsaimeos/gs-saferpay": 20
     },
     "prefer-stable": true,
